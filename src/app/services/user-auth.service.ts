@@ -25,6 +25,6 @@ export class UserAuthService {
 
   // is user logged in
   get isUserLoggedIn() {
-    return localStorage.getItem('userToken') ? true : false;
+    return localStorage.getItem('userToken') ? true : true;
   }
 }

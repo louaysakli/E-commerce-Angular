@@ -1,11 +1,28 @@
-.classActive {
-  background-color: #f44336;
-  color: white;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
+/* Customize the navbar */
+.navbar {
+  background-color: #343a40; /* Dark background */
+}
 
-  box-shadow: 0 0 5px #f44336;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
+.nav-link {
+  color: #ffffff !important; /* White text */
+}
+
+.nav-link.active {
+  font-weight: bold; /* Highlight active link */
+}
+
+.navbar-brand img {
+  border-radius: 50%; /* Circular logo */
+}
+
+.dropdown-menu {
+  background-color: #343a40; /* Dark dropdown */
+}
+
+.dropdown-item {
+  color: #ffffff; /* White text for dropdown items */
+}
+
+.dropdown-item:hover {
+  background-color: #495057; /* Slightly lighter background on hover */
 }

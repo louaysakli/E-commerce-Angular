@@ -12,15 +12,17 @@ import ValidationService from '../../../../util/ValidationService';
 
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-login',
   standalone: true,
   imports: [FormsModule, ReactiveFormsModule, CommonModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss',
+  styleUrls: ['./login.component.scss'],  // Corrected here
 })
 export class LoginComponent implements OnInit {
   loginFormGroup!: FormGroup;
+
   constructor(
     private userAuthService: UserAuthService,
     private formBuilder: FormBuilder,

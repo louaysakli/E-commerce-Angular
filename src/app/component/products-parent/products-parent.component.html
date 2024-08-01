@@ -1,7 +1,29 @@
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active text-center mb-3">
+      <img src="assets/home1.jpg" class="d-block w-100 img-fluid" alt="home">
+    </div>
+    <div class="carousel-item text-center mb-3">
+      <img src="assets/home2.jpg" class="d-block w-100 img-fluid" alt="...">
+    </div>
+    <div class="carousel-item text-center mb-3">
+      <img src="assets/home3.jpg" class="d-block w-100 img-fluid" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev bg-light" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next bg-light" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
 <h1 class="text-center font-weight-bold text-info ">Electronics</h1>
 
-<!-- FILEPATH: /E:/ITI/course/Angular/my-angular/src/app/component/products-parent/products-parent.component.html -->
-<!-- BEGIN: ed8c6549bwf9 -->
 <div class="mb-3 d-flex justify-content-center align-items-center gap-3">
   <div class="form-group">
     <label for="search" class="form-label text-info">Filter by name:</label>
@@ -68,23 +90,6 @@
   </thead>
   <tbody>
 
-    <!-- /*
-  Iproduct:
-  ID: 1,
-  Name: 'Laptop one',
-  description: 'this is a computer with 8GB RAM and 1TB HDD',
-  Quantity: 1,
-  price: 100,
-  Img: 'https://i.pcmag.com/imagery/reviews/01DwPnq2ew5930qO5p4LXWH-1..v1677608790.jpg',
-  CategoryId: 1,
-  Material: 'laptops',
-  Discount: DiscountOffers['no-discount'],
-  numOnCart: 1,
-  */
-
-  cart: any[] = []; -->
-
-
 
 
     @for (product of cart;track product.ID) {
@@ -104,17 +109,7 @@
       <td>
         {{product.price}}
       </td>
-      <!-- <td>
-        {{product.Discount}} %
-      </td>
 
-      <td>
-        {{product.price | calcDiscount: +product.Discount| currency:'USD'}}
-      </td>
-
-      <td>
-        {{product.price * product.numOnCart | calcDiscount: +product.Discount| currency:'USD'}}
-      </td> -->
 
       @if (product.Discount !== "No Discount") {
       <td>
@@ -161,6 +156,4 @@
   <i class="fas fa-shopping-cart"></i>
 </h3>
 }
-<!-- <p>
-  {{3000545440 | dashFourNumbers}}
-</p> -->
+

@@ -1,0 +1,139 @@
+/* products-parent.component.css */
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  
+  .table-responsive {
+    margin-top: 20px;
+  }
+  
+  .table-bordered {
+    border: 1px solid #dee2e6;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .thead-light th {
+    background-color: #f8f9fa;
+    color: #495057;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .font-weight-bold {
+    font-weight: bold;
+  }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .table {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 14px;
+    }
+  }
+  /* General styling for the product list */
+.table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Adds space between rows */
+  }
+  
+  .table thead th {
+    background-color: #f8f9fa; /* Light background for table headers */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table tbody td {
+    background-color: #ffffff; /* White background for table rows */
+    padding: 15px;
+    vertical-align: middle;
+  }
+  
+  /* Styling for product images */
+  .product-img {
+    width: 60px; /* Smaller size for product images */
+    height: 60px;
+    object-fit: cover; /* Ensure the image covers the area */
+    border-radius: 50%; /* Circular image */
+  }
+  
+  /* Styling for product details */
+  .table .d-flex {
+    align-items: center;
+  }
+  
+  .table .d-flex .ms-3 {
+    margin-left: 10px; /* Space between image and text */
+  }
+  
+  .table .fw-bold {
+    font-weight: 700;
+  }
+  
+  .table .text-muted {
+    color: #6c757d; /* Muted color for product material */
+  }
+  
+  /* Button styling */
+  .btn {
+    font-size: 14px; /* Smaller font size for buttons */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545; /* Danger button color */
+    border-color: #dc3545;
+  }
+  
+  /* Responsive design for product list */
+  @media (max-width: 768px) {
+    .table {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .product-img {
+      width: 50px; /* Smaller image size on smaller screens */
+      height: 50px;
+    }
+  }
+  
+    
